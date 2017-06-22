@@ -1,0 +1,3 @@
+rootProject.name = 'Notep'
+
+include ':app'
