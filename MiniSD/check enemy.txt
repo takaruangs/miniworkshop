@@ -1,0 +1,30 @@
+constructor(props){
+  super(props);
+  this.state ={
+    movePlayerVal: new Animated.Value(40),
+    playerSide: 'left',
+    points: 0,
+    maxscore: 0,
+
+    moveEnemyval: new Animated.Value(0),
+    enemyStartposX: 0,
+    enemySide: 'left',
+    enemySpeed: 4000,
+
+    gameOver: false,
+  };
+
+}
+<Enemy enemyImg={require('./src/enemy.png')}
+enemyStartposX={this.state.enemyStartposX}
+moveEnemyval={this.state.moveEnemyval} />
+
+<View style={styles.controls}>
+  <Text style={{flex:1,}}> </Text>
+  <Text style={styles.left} onPress={ () => this.movePlayer('left')}> {'< < < '} </Text>
+  <Text style={{flex:1,}}> </Text>
+  <Text style={styles.right} onPress={ () => this.movePlayer('right')}> {'> > >'} </Text>
+  <Text style={{flex:1,}}> </Text>
+</View>
+
+</Image>
